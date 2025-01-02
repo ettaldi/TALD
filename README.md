@@ -40,13 +40,12 @@ python3 TALD.py
 ## Requirements
 
 - **Python**
-- **Modules**:
+  **Modules**:
   - `colorama`
-  - `csv`
  
 ## Find Me on
 - [![Github](https://img.shields.io/badge/Github-TALDTool-green?style=for-the-badge&logo=github)](https://github.com/TALDTool)
 
 - [![Gmail](https://img.shields.io/badge/Gmail-TALDTool-green?style=for-the-badge&logo=gmail)](mailto:taldtool06@gmail.com)
 
-- [![LinkedIn](https://img.shields.io/badge/LinkedIn-TALDTool-green?style=for-the-badge&logo=facebook)](https://www.linkedin.com/in/mohamed-rayan-ettaldi-6b7501244?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app)
+- [![LinkedIn](https://img.shields.io/badge/LinkedIn-TALDTool-green?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/mohamed-rayan-ettaldi-6b7501244?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app)
