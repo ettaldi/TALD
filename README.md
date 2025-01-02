@@ -43,3 +43,5 @@ python3 TALD.py
 - **Modules**:
   - `colorama`
   - `csv`
+ 
+## Find Me on
