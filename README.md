@@ -45,12 +45,8 @@ python3 TALD.py
   - `csv`
  
 ## Find Me on
-- [![Github](https://img.shields.io/badge/Github-KasRoudra-green?style=for-the-badge&logo=github)](https://github.com/KasRoudra)
+- [![Github](https://img.shields.io/badge/Github-TALDTool-green?style=for-the-badge&logo=github)](https://github.com/TALDTool)
 
-- [![Gmail](https://img.shields.io/badge/Gmail-KasRoudra-green?style=for-the-badge&logo=gmail)](mailto:kasroudrakrd@gmail.com)
+- [![Gmail](https://img.shields.io/badge/Gmail-TALDTool-green?style=for-the-badge&logo=gmail)](mailto:taldtool06@gmail.com)
 
-- [![Facebook](https://img.shields.io/badge/Facebook-KasRoudra-green?style=for-the-badge&logo=facebook)](https://facebook.com/KasRoudra)
-
-- [![Messenger](https://img.shields.io/badge/Messenger-KasRoudra-green?style=for-the-badge&logo=messenger)](https://m.me/KasRoudra)
-
-- [![Telegram](https://img.shields.io/badge/Telegram-KasRoudra-indigo?style=for-the-badge&logo=telegram)](https://t.me/KasRoudra)
+- [![LinkedIn](https://img.shields.io/badge/LinkedIn-TALDTool-green?style=for-the-badge&logo=facebook)](https://www.linkedin.com/in/mohamed-rayan-ettaldi-6b7501244?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app)
