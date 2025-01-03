@@ -60,12 +60,6 @@ python3 TALD.py
     `colorama`
 
 
-## **Screenshots**
-
-<div align="center">
-  <img src="files/screenshot.png" alt="Screenshot" width="80%" />
-</div>
-
 
 ## **Find Me On**
 <div align="center">
