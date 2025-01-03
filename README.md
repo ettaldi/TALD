@@ -1,6 +1,7 @@
 <div align="left">
   <img src="files/logo.png" alt="Logo" width="150" />
 </div>
+
 # TALD
 
 ## Description
