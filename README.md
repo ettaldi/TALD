@@ -20,12 +20,12 @@
 
 ### **Install Primary Dependencies (Git, Python)**
 
-#### ***For Debian-based Systems (Ubuntu, Kali, Parrot)***:
+#### For Debian (Ubuntu, Kali, Parrot)
 ```bash
 sudo apt install git python3 -y
 ```
 
-#### For Red Hat-based Systems (Fedora):
+#### For Red Hat (Fedora)
 ```bash
 sudo dnf install git python3 -y
 ```
