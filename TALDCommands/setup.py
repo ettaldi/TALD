@@ -8,7 +8,7 @@ setup(
     description="This module contains suspicious patterns.",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/ettaldi/TALDTool",
+    url="TALDCommands/TALDCommands/TALDCommands.py",
     packages=find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
