@@ -62,7 +62,7 @@ python3 TALD.py
 ## **Requirements**
 
 - **Python 3.x**
-  - **Modules**:
+   **Modules** :
     `colorama`
 
 ---
@@ -78,7 +78,7 @@ python3 TALD.py
 
 ## **Find Me On**
 
-<div align="left">
+<div align="center">
   <a href="https://github.com/TALDv" target="_blank">
     <img src="https://img.shields.io/badge/GitHub-171515?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
   </a>
