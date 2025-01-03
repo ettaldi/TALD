@@ -4,7 +4,6 @@
 
 # TALD
 
-## Description
 TALD is an open-source Python-based tool designed to help you detect malicious patterns and potentially harmful commands in script files.
 
 ## Installation
