@@ -1,3 +1,4 @@
+import TALDCommands
 SUSPICIOUS_PATTERNS = {
     "Dangerous Commands": [
 r"mimikatz LLBVp",
