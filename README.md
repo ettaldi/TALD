@@ -1,8 +1,6 @@
-<div align="center">
-  <h2>🇲🇦 Made in Morocco</h2>
-  <img src="https://img.shields.io/badge/Made%20with%20❤️%20in-Morocco-FF4B4B?style=for-the-badge&logo=googleearth&logoColor=white" alt="Made in Morocco">
+<div align="left">
+  <img src="files/logo.png" alt="Logo" width="150" />
 </div>
-
 # TALD
 
 ## Description
