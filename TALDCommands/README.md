@@ -1,4 +1,4 @@
-# Mon Module
+# Module
 
 This module contains suspicious patterns.
 
