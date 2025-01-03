@@ -1,5 +1,5 @@
-<div align="left">
-  <img src="files/logo.png" alt="Logo" width="150" />
+<div align="center">
+  <img src="files/logo.png" alt="Logo" width="50" />
 </div>
 
 # TALD
