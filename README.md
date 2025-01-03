@@ -20,7 +20,7 @@
 
 ### **Install Primary Dependencies (Git, Python)**
 
-#### ****For Debian-based Systems (Ubuntu, Kali, Parrot):
+#### ***For Debian-based Systems (Ubuntu, Kali, Parrot)***:
 ```bash
 sudo apt install git python3 -y
 ```
