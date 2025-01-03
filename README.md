@@ -46,6 +46,7 @@ cd TALD
 pip3 install -r files/requirements.txt
 ```
 
+---
 
 ## **Usage**
 
@@ -55,11 +56,11 @@ python3 TALD.py
 ```
 
 
-## **Requirements**
+### Requirements
  ***Modules*** :
     `colorama`
 
-
+---
 
 ## **Find Me On**
 <div align="center">
