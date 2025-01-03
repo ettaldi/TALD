@@ -1,3 +1,8 @@
+<div align="center">
+  <h2>🇲🇦 Made in Morocco</h2>
+  <img src="https://img.shields.io/badge/Made%20with%20❤️%20in-Morocco-FF4B4B?style=for-the-badge&logo=googleearth&logoColor=white" alt="Made in Morocco">
+</div>
+
 # TALD
 
 ## Description
@@ -45,7 +50,7 @@ python3 TALD.py
  
 ## Find Me on
  
-<div align="center">
+<div align="left">
   <a href="https://github.com/TALDv" target="_blank">
     <img src="https://img.shields.io/badge/GitHub-171515?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
   </a>
