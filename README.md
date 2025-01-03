@@ -1,12 +1,12 @@
 <div align="center">
-  <img src="files/logo.png" alt="Logo" width="100" />
+  <img src="files/logo.png" alt="Logo" width="50" />
 </div>
 
 # **TALD**
 
-[![Python](https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/) [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.x-yellow?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 
-**TALD** (Threat Analysis for Logic Detection) is an open-source Python-based tool designed to help you detect malicious patterns and potentially harmful commands in script files.
+**TALD** (Script Analysis Tool) is an open-source Python-based tool designed to help you detect malicious patterns and potentially harmful commands in script files.
 
 ---
 
@@ -14,7 +14,6 @@
 
 - Detects malicious commands in script files.
 - Lightweight and easy to use.
-- Supports extensibility with monthly AI-generated command updates.
 
 ---
 
@@ -64,28 +63,16 @@ python3 TALD.py
 
 - **Python 3.x**
   - **Modules**:
-    - `colorama`
+    `colorama`
 
 ---
 
 ## **Screenshots**
 
 <div align="center">
-  <img src="files/screenshot1.png" alt="Screenshot 1" width="75%" />
+  <img src="files/screenshot.png" alt="Screenshot" width="75%" />
   <p>Detecting malicious patterns</p>
 </div>
-
----
-
-## **Contributing**
-
-Contributions are welcome! To contribute:
-
-1. Fork this repository.
-2. Create a new branch for your feature: `git checkout -b feature-name`
-3. Commit your changes: `git commit -m 'Add some feature'`
-4. Push to the branch: `git push origin feature-name`
-5. Open a pull request.
 
 ---
 
