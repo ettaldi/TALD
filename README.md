@@ -44,3 +44,10 @@ python3 TALD.py
   - `colorama`
  
 ## Find Me on
+### Connect with me:
+
+[![GitHub](./img/github-light.svg#gh-light-mode-only)](https://github.com/TALDv)
+[![GitHub](./img/github-dark.svg#gh-dark-mode-only)](https://github.com/TALDv)
+
+[![LinkedIn](./img/linkedin-light.svg#gh-light-mode-only)](https://www.linkedin.com/in/mohamed-rayan-ettaldi-6b7501244/)
+[![LinkedIn](./img/linkedin-dark.svg#gh-dark-mode-only)](https://www.linkedin.com/in/mohamed-rayan-ettaldi-6b7501244/)
