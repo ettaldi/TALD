@@ -82,11 +82,4 @@ python3 TALD.py
   </a>
 </div>
 
----
-
-## **License**
-
-This project is licensed under the MIT License.
-
----
 
