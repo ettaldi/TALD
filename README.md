@@ -59,6 +59,7 @@ python3 TALD.py
 ### Requirements
  ***Modules*** :
     `colorama`
+    `fpdf`
 
 ---
 
