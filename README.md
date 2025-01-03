@@ -4,7 +4,7 @@
 
 # **TALD (Script Analysis Tool)**
 
-[![Python](https://img.shields.io/badge/Python-3.x-yellow?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Python](https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python&logoColor=blue)](https://www.python.org/)
 
 **TALD** is an open-source Python-based tool designed to help you detect malicious patterns and potentially harmful commands in script files.
 
