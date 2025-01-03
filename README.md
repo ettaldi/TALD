@@ -31,7 +31,6 @@ sudo apt install git python3 -y
 sudo dnf install git python3 -y
 ```
 
----
 
 ### **Step 2: Clone the Repository**
 ```bash
@@ -48,7 +47,6 @@ cd TALD
 pip3 install -r files/requirements.txt
 ```
 
----
 
 ## **Usage**
 
@@ -57,7 +55,6 @@ pip3 install -r files/requirements.txt
 python3 TALD.py
 ```
 
----
 
 ## **Requirements**
 
@@ -65,13 +62,11 @@ python3 TALD.py
    **Modules** :
     `colorama`
 
----
 
 ## **Screenshots**
 
 <div align="center">
-  <img src="files/screenshot.png" alt="Screenshot" width="75%" />
-  <p>Detecting malicious patterns</p>
+  <img src="files/screenshot.png" alt="Screenshot" width="100%" />
 </div>
 
 ---
