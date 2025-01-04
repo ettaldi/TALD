@@ -38,7 +38,7 @@ sudo git clone https://github.com/ettaldi/TALDTool
 
 ### **Enter the Directory**
 ```bash
-cd TALD
+cd TALDTool
 ```
 
 ### **Install Required Modules**
