@@ -20,7 +20,7 @@
 
 ### **Install Primary Dependencies (Git, Python)**
 
-#### For Debian (Ubuntu, Kali, Parrot)
+#### For Debian (Kali)
 ```bash
 sudo apt install git python3 -y
 ```
@@ -33,7 +33,7 @@ sudo dnf install git python3 -y
 
 ### **Clone the Repository**
 ```bash
-sudo git clone https://github.com/TALDTool/TALD
+sudo git clone https://github.com/ettaldi/TALDTool
 ```
 
 ### **Enter the Directory**
