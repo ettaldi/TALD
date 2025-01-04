@@ -2,9 +2,10 @@ import re
 import os
 from colorama import Fore, Style, init
 from TALDCommands import SUSPICIOUS_PATTERNS
+
 init()
 
-# Logo TALD
+# Logo Display
 def display_logo():
     logo = f"""
 {Fore.LIGHTGREEN_EX}
@@ -12,7 +13,6 @@ def display_logo():
             ║ ████████  █████  ██     ██████       ║
             ║    ██    ██   ██ ██     ██   ██      ║
             ║    ██    ███████ ██     ██   ██      ║
-            ║    ██    ██   ██ ██     ██   ██      ║
             ║    ██    ██   ██ ██████ ██████  v1.0 ║
             ╚══════════════════════════════════════╝
                    -- {Fore.GREEN}Script Analysis Tool{Fore.LIGHTGREEN_EX} --
@@ -22,10 +22,14 @@ def display_logo():
     """
     print(logo)
 
-# Analyze a file
+# Analyze File
 def analyze_file(file_path):
-    with open(file_path, 'r', encoding='utf-8', errors='ignore') as file:
-        lines = file.readlines()
+    try:
+        with open(file_path, 'r', encoding='utf-8', errors='ignore') as file:
+            lines = file.readlines()
+    except Exception as e:
+        print(f"{Fore.RED}[!] Error reading file {file_path}: {e}{Style.RESET_ALL}")
+        return []
 
     results = []
     for i, line in enumerate(lines, start=1):
@@ -35,7 +39,7 @@ def analyze_file(file_path):
                     results.append((i, line.strip(), category, pattern))
     return results
 
-# Display the results
+# Display Results
 def display_results(file_path, results):
     if results:
         print(f"{Fore.RED}\n[!] Risks detected in the file: {file_path}{Style.RESET_ALL}")
@@ -45,13 +49,15 @@ def display_results(file_path, results):
             print(f"    → Category: {Fore.CYAN}{category}{Style.RESET_ALL}")
             print(f"    → Suspicious Pattern: {Fore.MAGENTA}{pattern}{Style.RESET_ALL}")
         print("-" * 80)
+    else:
+        print(f"{Fore.GREEN}[+] No suspicious patterns found in {file_path}{Style.RESET_ALL}")
 
-# Main function
+# Main Function
 def main():
     display_logo()
 
     while True:
-        print(f"{Fore.LIGHTCYAN_EX}          1. Analyze a directory                2. Analyze a specific file") 
+        print(f"{Fore.LIGHTCYAN_EX}          1. Analyze a directory                2. Analyze a specific file")
         print(f"{Fore.LIGHTCYAN_EX}          3. Exit")
         print()
         choice = input(f"{Fore.CYAN}Choose an option: {Style.RESET_ALL}")
@@ -62,19 +68,16 @@ def main():
                 print(f"{Fore.RED}[!] The specified path is not a valid directory: {directory}{Style.RESET_ALL}")
                 continue
 
-            print(f"{Fore.LIGHTCYAN_EX}Scanning directory: {directory}{Style.RESET_ALL}")
             all_results = []
             for root, _, files in os.walk(directory):
                 for file in files:
-                    file_path = os.path.join(root, file)
                     if file.endswith(('.sh', '.py', '.bat', '.ps1')):
+                        file_path = os.path.join(root, file)
                         print(f"{Fore.GREEN}\n[+] Analyzing file: {file_path}{Style.RESET_ALL}")
                         results = analyze_file(file_path)
                         all_results.extend(results)
-            if all_results:
-                display_results(directory, all_results)
-            else:
-                print(f"{Fore.RED}[!] No suspicious patterns found in the directory.{Style.RESET_ALL}")
+
+            display_results(directory, all_results)
 
         elif choice == '2':
             file_path = input(f"{Fore.LIGHTCYAN_EX}Enter the file path to analyze: {Style.RESET_ALL}")
@@ -83,8 +86,6 @@ def main():
                 continue
             results = analyze_file(file_path)
             display_results(file_path, results)
-            if not results:
-                print(f"{Fore.RED}[!] No suspicious patterns found in the file.{Style.RESET_ALL}")
 
         elif choice == '3':
             print(f"{Fore.GREEN}Exiting the tool. {Style.RESET_ALL}")
@@ -93,6 +94,5 @@ def main():
         else:
             print(f"{Fore.RED}[!] Please choose a valid option.{Style.RESET_ALL}")
 
-# Run the program
 if __name__ == "__main__":
     main()
