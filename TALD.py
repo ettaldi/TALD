@@ -31,11 +31,8 @@ def analyze_file(file_path):
     for i, line in enumerate(lines, start=1):
         for category, patterns in TALDCommands.items():
             for pattern in patterns:
-                try:
-                    if re.search(pattern, line):
-                        results.append((i, line.strip(), category, pattern))
-                except re.error as e:
-                    print(f"{Fore.RED}[!] Error in regex pattern: {pattern}. Error: {e}{Style.RESET_ALL}")
+                if re.search(pattern, line):
+                    results.append((i, line.strip(), category, pattern))
     return results
 
 # Display the results
@@ -48,8 +45,6 @@ def display_results(file_path, results):
             print(f"    → Category: {Fore.CYAN}{category}{Style.RESET_ALL}")
             print(f"    → Suspicious Pattern: {Fore.MAGENTA}{pattern}{Style.RESET_ALL}")
         print("-" * 80)
-    else:
-        print(f"{Fore.GREEN}[+] No suspicious patterns found in the file: {file_path}{Style.RESET_ALL}")
 
 # Main function
 def main():
@@ -88,6 +83,8 @@ def main():
                 continue
             results = analyze_file(file_path)
             display_results(file_path, results)
+            if not results:
+                print(f"{Fore.RED}[!] No suspicious patterns found in the file.{Style.RESET_ALL}")
 
         elif choice == '3':
             print(f"{Fore.GREEN}Exiting the tool. {Style.RESET_ALL}")
