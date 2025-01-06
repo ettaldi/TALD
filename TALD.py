@@ -1,8 +1,8 @@
 import re
 import os
 from colorama import Fore, Style, init
-from TALDCommands import TALDCommands  # Ensure TALDCommands is installed via pip
-init()
+from TALDCommands import TALDCommands  # Adjust based on actual module contents
+init(autoreset=True)
 
 # Logo TALD
 def display_logo():
@@ -24,12 +24,16 @@ def display_logo():
 
 # Analyze a file
 def analyze_file(file_path):
-    with open(file_path, 'r', encoding='utf-8', errors='ignore') as file:
-        lines = file.readlines()
+    try:
+        with open(file_path, 'r', encoding='utf-8', errors='ignore') as file:
+            lines = file.readlines()
+    except Exception as e:
+        print(f"{Fore.RED}[!] Error reading file {file_path}: {e}{Style.RESET_ALL}")
+        return []
 
     results = []
     for i, line in enumerate(lines, start=1):
-        for category, patterns in TALDCommands.items():
+        for category, patterns in TALDCommands.items():  # Use the correct dictionary from TALDCommands
             for pattern in patterns:
                 if re.search(pattern, line):
                     results.append((i, line.strip(), category, pattern))
@@ -45,6 +49,26 @@ def display_results(file_path, results):
             print(f"    → Category: {Fore.CYAN}{category}{Style.RESET_ALL}")
             print(f"    → Suspicious Pattern: {Fore.MAGENTA}{pattern}{Style.RESET_ALL}")
         print("-" * 80)
+    else:
+        print(f"{Fore.GREEN}[+] No suspicious patterns found in {file_path}.{Style.RESET_ALL}")
+
+# Analyze a directory
+def analyze_directory(directory):
+    if not os.path.isdir(directory):
+        print(f"{Fore.RED}[!] The specified path is not a valid directory: {directory}{Style.RESET_ALL}")
+        return []
+
+    print(f"{Fore.LIGHTCYAN_EX}Scanning directory: {directory}{Style.RESET_ALL}")
+    all_results = []
+    for root, _, files in os.walk(directory):
+        for file in files:
+            file_path = os.path.join(root, file)
+            if file.endswith(('.sh', '.py', '.bat', '.ps1')):
+                print(f"{Fore.GREEN}\n[+] Analyzing file: {file_path}{Style.RESET_ALL}")
+                results = analyze_file(file_path)
+                if results:
+                    all_results.extend([(file_path, *result) for result in results])
+    return all_results
 
 # Main function
 def main():
@@ -58,23 +82,14 @@ def main():
 
         if choice == '1':
             directory = input(f"{Fore.LIGHTCYAN_EX}Enter the directory path to analyze: {Style.RESET_ALL}")
-            if not os.path.isdir(directory):
-                print(f"{Fore.RED}[!] The specified path is not a valid directory: {directory}{Style.RESET_ALL}")
-                continue
-
-            print(f"{Fore.LIGHTCYAN_EX}Scanning directory: {directory}{Style.RESET_ALL}")
-            all_results = []
-            for root, _, files in os.walk(directory):
-                for file in files:
-                    file_path = os.path.join(root, file)
-                    if file.endswith(('.sh', '.py', '.bat', '.ps1')):
-                        print(f"{Fore.GREEN}\n[+] Analyzing file: {file_path}{Style.RESET_ALL}")
-                        results = analyze_file(file_path)
-                        all_results.extend(results)
-            if all_results:
-                display_results(directory, all_results)
+            results = analyze_directory(directory)
+            if results:
+                for file_path, line_no, line, category, pattern in results:
+                    print(f"{Fore.YELLOW}[{file_path}] Line {line_no}: {line}{Style.RESET_ALL}")
+                    print(f"  → Category: {Fore.CYAN}{category}{Style.RESET_ALL}")
+                    print(f"  → Suspicious Pattern: {Fore.MAGENTA}{pattern}{Style.RESET_ALL}")
             else:
-                print(f"{Fore.RED}[!] No suspicious patterns found in the directory.{Style.RESET_ALL}")
+                print(f"{Fore.GREEN}[+] No suspicious patterns found in the directory.{Style.RESET_ALL}")
 
         elif choice == '2':
             file_path = input(f"{Fore.LIGHTCYAN_EX}Enter the file path to analyze: {Style.RESET_ALL}")
@@ -83,8 +98,6 @@ def main():
                 continue
             results = analyze_file(file_path)
             display_results(file_path, results)
-            if not results:
-                print(f"{Fore.RED}[!] No suspicious patterns found in the file.{Style.RESET_ALL}")
 
         elif choice == '3':
             print(f"{Fore.GREEN}Exiting the tool. {Style.RESET_ALL}")
