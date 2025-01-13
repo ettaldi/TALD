@@ -52,13 +52,14 @@ pip3 install -r files/requirements.txt
 
 ### Run the Tool
 ```bash
-python3 TALD.py
+python3 TALDTool.py
 ```
 
 
 ### Requirements
  ***Modules*** :
     `colorama`
+    `TALDCommands`
 
 ---
 
