@@ -85,7 +85,6 @@ def main():
             if results:
                 for file_path, line_no, line, category, pattern in results:
                     print(f"{Fore.YELLOW}[{file_path}] Line {line_no}: {line}{Style.RESET_ALL}")
-                    print(f"  → Category: {Fore.CYAN}{category}{Style.RESET_ALL}")
                     print(f"  → Suspicious Pattern: {Fore.MAGENTA}{pattern}{Style.RESET_ALL}")
             else:
                 print(f"{Fore.GREEN}[+] No suspicious patterns found in the directory.{Style.RESET_ALL}")
