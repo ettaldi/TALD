@@ -8,21 +8,19 @@ init(autoreset=True)
 def display_logo():
     logo = f"""
 {Fore.LIGHTGREEN_EX}
-            ╔══════════════════════════════════════╗
-            ║ ████████  █████  ██     ██████       ║
-            ║    ██    ██   ██ ██     ██   ██      ║
-            ║    ██    ███████ ██     ██   ██      ║
-            ║    ██    ██   ██ ██     ██   ██      ║
-            ║    ██    ██   ██ ██████ ██████  v1.0 ║
-            ╚══════════════════════════════════════╝
-                   -- {Fore.GREEN}Script Analysis Tool{Fore.LIGHTGREEN_EX} --
+             _________    __    ____  ______            __
+            /_  __/   |  / /   / __ \/_  __/___  ____  / /
+             / / / /| | / /   / / / / / / / __ \/ __ \/ / 
+            / / / ___ |/ /___/ /_/ / / / / /_/ / /_/ / /  
+           /_/ /_/  |_/_____/_____/ /_/  \____/\____/_/  v1.0
+                                                                                          
+                     -- {Fore.GREEN}Script Analysis Tool{Fore.LIGHTGREEN_EX} --
 {Fore.LIGHTCYAN_EX}  
-                   By {Fore.LIGHTBLUE_EX}Mohamed Rayan Ettaldi
-{Fore.LIGHTCYAN_EX} [!] Visit {Fore.LIGHTGREEN_EX}https://github.com/ettaldi/TALDTool{Fore.LIGHTCYAN_EX} to update the tool
+                     By {Fore.LIGHTBLUE_EX}Mohamed Rayan Ettaldi
+{Fore.LIGHTCYAN_EX}   [!] Visit {Fore.LIGHTGREEN_EX}https://github.com/ettaldi/TALDTool{Fore.LIGHTCYAN_EX} to update the tool
     """
     print(logo)
 
-# Analyze a file
 def analyze_file(file_path):
     try:
         with open(file_path, 'r', encoding='utf-8', errors='ignore') as file:
@@ -39,7 +37,6 @@ def analyze_file(file_path):
                     results.append((i, line.strip(), category, pattern))
     return results
 
-# Display the results
 def display_results(file_path, results):
     if results:
         print(f"{Fore.RED}\n[!] Risks detected in the file: {file_path}{Style.RESET_ALL}")
@@ -51,7 +48,6 @@ def display_results(file_path, results):
     else:
         print(f"{Fore.GREEN}[+] No suspicious patterns found in {file_path}.{Style.RESET_ALL}")
 
-# Analyze a directory
 def analyze_directory(directory):
     if not os.path.isdir(directory):
         print(f"{Fore.RED}[!] The specified path is not a valid directory: {directory}{Style.RESET_ALL}")
@@ -69,7 +65,6 @@ def analyze_directory(directory):
                     all_results.extend([(file_path, *result) for result in results])
     return all_results
 
-# Main function
 def main():
     display_logo()
 
@@ -104,6 +99,5 @@ def main():
         else:
             print(f"{Fore.RED}[!] Please choose a valid option.{Style.RESET_ALL}")
 
-# Run the program
 if __name__ == "__main__":
     main()
