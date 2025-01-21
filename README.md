@@ -36,6 +36,8 @@ sudo dnf install git python3 -y
 #### **Windows**
 - Installez Git et Python depuis leurs sites officiels.
 
+> **Astuce :** Assurez-vous d'ajouter Python et Git à votre variable PATH pendant l'installation sur Windows.
+
 ---
 
 ### **Clonez le dépôt**
@@ -58,8 +60,15 @@ pip3 install -r files/requirements.txt
 ## **Utilisation**
 
 ### Exécutez l'outil
+
+#### Sur Linux
 ```bash
 python3 TALD.py
+```
+
+#### Sur Windows
+```cmd
+python TALD.py
 ```
 
 ---
