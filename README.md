@@ -77,7 +77,7 @@ python TALD.py
 ### Modules requis :
   `colorama`    `TALDCommands`
 
-## **                          Prérequis**
+## **Prérequis**
 
 <div align="center">
   <a href="https://github.com/ettaldi" target="_blank">
