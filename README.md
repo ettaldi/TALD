@@ -11,7 +11,7 @@
 
 ## **Fonctionnalités**
 
-- ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) Détection des commandes malveillantes dans les fichiers de script.
+-  Détection des commandes malveillantes dans les fichiers de script.
 - Léger et facile à utiliser.
 
 ---
