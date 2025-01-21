@@ -79,7 +79,8 @@ python TALD.py
 
 
 
-## **Trouvez-moi sur**
+
+## **Trouvez-moi sur*
 ---
 
 <div align="center">
