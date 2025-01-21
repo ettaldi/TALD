@@ -75,7 +75,7 @@ python TALD.py
 ## **Prérequis**
 
 ### Modules requis :
-        `colorama`    `TALDCommands`
+ `colorama`    `TALDCommands`
 
 ## **Trouvez-moi sur**
 
