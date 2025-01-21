@@ -77,7 +77,7 @@ python TALD.py
 ### Modules requis :
   `colorama`    `TALDCommands`
 
-## **Touvez-moi sur**
+<p align="center">Trouvez-moi sur</p>
 
 <div align="center">
   <a href="https://github.com/ettaldi" target="_blank">
