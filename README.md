@@ -15,7 +15,7 @@
 - Détection des commandes malveillantes dans les fichiers de script.
 - Léger et facile à utiliser.
 
----
+
 
 ## **Installation**
 
@@ -34,11 +34,10 @@ sudo dnf install git python3 -y
 ```
 
 ### **Windows**
-- Installez Git et Python depuis leurs sites officiels.
+> Installez Git et Python depuis leurs sites officiels.
 
-> **Astuce :** Assurez-vous d'ajouter Python et Git à votre variable PATH pendant l'installation sur Windows.
 
----
+
 
 ### **Clonez le dépôt**
 ```bash
@@ -55,7 +54,7 @@ cd TALD
 pip3 install -r files/requirements.txt
 ```
 
----
+
 
 ## **Utilisation**
 
