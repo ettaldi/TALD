@@ -21,19 +21,19 @@
 
 ### **Installer les dépendances principales (Git, Python)**
 
-#### **Linux**
+### **Linux**
 
-##### Pour Debian
+#### Pour Debian
 ```bash
 sudo apt install git python3 -y
 ```
 
-##### Pour Red Hat
+#### Pour Red Hat
 ```bash
 sudo dnf install git python3 -y
 ```
 
-#### **Windows**
+### **Windows**
 - Installez Git et Python depuis leurs sites officiels.
 
 > **Astuce :** Assurez-vous d'ajouter Python et Git à votre variable PATH pendant l'installation sur Windows.
@@ -76,8 +76,7 @@ python TALD.py
 ## **Prérequis**
 
 ### Modules requis :
-- `colorama`
-- `TALDCommands`
+  `colorama`    `TALDCommands`
 
 ---
 
