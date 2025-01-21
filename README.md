@@ -53,6 +53,10 @@ cd TALD
 ```bash
 pip3 install -r files/requirements.txt
 ```
+> **Important :** il est nécessaire de mettre à jour les modules chaque mois.
+```bash
+pip3 install -r files/requirements.txt --upgrade
+```
 
 
 
