@@ -23,12 +23,12 @@
 ## **Linux**
 
 #### Pour Debian
-bash
+```bash
 sudo apt install git python3 -y
 
 
 #### Pour Red Hat
-bash
+```bash
 sudo dnf install git python3 -y
 
 ## **Windows**
@@ -39,17 +39,17 @@ Installer Git et Python sur Windows depuis leurs sites officiels
 
 
 ### **Clonez le dépôt**
-bash
+```bash
 sudo git clone https://github.com/ettaldi/TALD
 
 
 ### **Entrez dans le répertoire**
-bash
+```bash
 cd TALD
 
 
 ### **Installez les modules requis**
-bash
+```bash
 pip3 install -r files/requirements.txt
 
 
@@ -58,17 +58,17 @@ pip3 install -r files/requirements.txt
 ## **Utilisation**
 
 ### Exécutez l'outil
-bash
+```bash
 python3 TALD.py
 
 
 
 ### Prérequis
  ***Modules*** :
-    colorama
-    TALDCommands
+  ```colorama
+  ```TALDCommands
 
----
+
 
 ## **Trouvez-moi sur**
 <div align="center">
