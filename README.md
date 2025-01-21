@@ -8,13 +8,13 @@
 
 **TALD** est un outil open-source basé sur Python conçu pour vous aider à détecter les commandes malveillantes ou potentiellement nuisibles dans les fichiers de script.
 
----
 
 ## **Fonctionnalités**
 
 - Détection des commandes malveillantes dans les fichiers de script.
 - Léger et facile à utiliser.
 
+---
 
 
 ## **Installation**
