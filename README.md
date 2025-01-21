@@ -60,17 +60,17 @@ pip3 install -r files/requirements.txt
 
 ### Exécutez l'outil
 
-#### Sur Linux
+### Linux
 ```bash
 python3 TALD.py
 ```
 
-#### Sur Windows
+### Windows
 ```cmd
 python TALD.py
 ```
 
----
+
 
 ## **Prérequis**
 
