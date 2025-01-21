@@ -80,7 +80,9 @@ python TALD.py
 
 
 
-### **Touvez-moi sur**
+## **Touvez-moi sur**
+---
+
 <div align="center">
   <a href="https://github.com/ettaldi" target="_blank">
     <img src="https://img.shields.io/badge/GitHub-171515?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
