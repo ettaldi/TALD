@@ -51,11 +51,11 @@ cd TALD
 
 ### **Installez les modules requis**
 ```bash
-pip3 install -r files/requirements.txt
+pip3 install -r files/modules.txt
 ```
 > **Important :** il est nécessaire de mettre à jour les modules chaque mois.
 ```bash
-pip3 install -r files/requirements.txt --upgrade
+pip3 install -r files/modules.txt --upgrade
 ```
 
 
@@ -76,10 +76,7 @@ python TALD.py
 
 
 
-## **Prérequis**
 
-### Modules requis :
- `colorama`    `TALDCommands`
 
 ## **Trouvez-moi sur**
 
