@@ -23,12 +23,12 @@
 
 ### **Linux**
 
-#### Pour Debian
+#### Debian
 ```bash
 sudo apt install git python3 -y
 ```
 
-#### Pour Red Hat
+#### Red Hat
 ```bash
 sudo dnf install git python3 -y
 ```
