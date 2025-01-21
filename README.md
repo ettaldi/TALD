@@ -19,7 +19,7 @@
 
 ## **Installation**
 
-### **Installer les dépendances principales (Git, Python)**
+### **Installez les dépendances (Git, Python)**
 
 ### **Linux**
 
